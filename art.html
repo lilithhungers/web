@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="device-width", initial-scale=1> 
+        <title>Inky Oceans – Art</title>
+        <link rel="icon" type="image/x-icon" href="images/inkfavicon.ico">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <style>
+        body {
+            background-image: url("images/web_bg_4.png");
+        }
+    </style>
+    <body>
+        <div class="nav">
+            <ul>
+                <li class=""><a href="#h1">Home!</a></li>
+                <li class=""><a href="Featured.html">Blog!</a></li>
+                <li><a href="creative_writing.html">Creative Writing!</li>
+                <li><a href="copy.html">Copywriting!</a></li>
+                <li><a href="#h1">Top of page!</a></li>
+                <li><a href="films.html">Short Films!</a></li>
+                <li class="pad 3 dropdown"><a href="javascript:void(0)" class="dropbtn">Misc Things</a>
+                    <div class="dropdown-content">
+                        <a href="#msg">Contact me</a>
+                        <a href="cool_gifs.html">Cool gifs</a>
+                        <a href="#">Link dump</a>
+                    </div>
+                </li>
+                <li><a href="#END">Jump to Bottom!</a></li>
+            </ul>
+    
+        </div>
+        <div class="bg_shift centered orb"><h1>Art</h1></div>
+
+
+
+
+
+
+
+        <div class="rowgal">
+            <div class="miniBox"><p></p></div>
+            <div class="miniBox"><p></p></div>
+            <div class="miniBox"><p></p></div>
+            <div class="miniBox" style="margin: 10px 70px 10px 10px;"><p></p></div>
+        </div>
+        <div class="rowgal">
+            <div class="miniRect"><p>Hello</p></div>
+            <div class="miniRect" style="margin: 10px 110px 10px 10px;"><p>What will happen when there is the most text,
+                the most words that were ever even in a box such as thisWhat will happen when there is the most text,
+                the most words that were ever even in a box such as thisWhat will happen when there is the most text,
+                the most words ox such as thisWhat will happen when there is the most text,
+                the most words that were ever even in a box such as this
+            </p></div>
+        </div>
+        <footer id="END">
+            Website made by Me, with help from the lovely Aliya!<br>
+            Send me a message! Here is my email:<br>
+            callumwilson.6106.gmail.com<br>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("gal_img");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </body>
